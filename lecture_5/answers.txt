@@ -1,0 +1,69 @@
+4.1 IP Address and Default Gateway
+Public IP address: 212.222.202.185
+Local IPv4 address: 10.146.200.172
+Default gateway: 10.146.192.1
+The public IP address was obtained using:
+curl.exe ifconfig.me
+The local IPv4 address and default gateway were obtained using:
+ipconfig
+
+
+4.2 VPN
+Without VPN, my public IP address was:
+212.222.202.185
+After enabling eduVPN, my public IP address shown by ifconfig.me was still:
+212.222.202.185
+However, after enabling the VPN, a new OpenVPN Wintun adapter appeared in ipconfig with the IPv4 address:
+145.138.224.114
+Therefore, the public IP reported by ifconfig.me did not change in my test, although the VPN created an additional virtual network adapter.
+
+
+4.3 Public and Private IP Addresses
+My public IP address is:
+212.222.202.185
+This is a public IP address.
+My local IPv4 address is:
+10.146.200.172
+This is a private IP address because it is within the private 10.0.0.0/8 address range.
+My default gateway is:
+10.146.192.1
+This is also a private IP address because it is within the private 10.0.0.0/8 address range.
+
+
+4.4 Geo-location of My Public IP
+I used:
+curl.exe ipinfo.io
+The result for my public IP address was:
+IP address: 212.222.202.185
+City: Leiden
+Region: South Holland
+Country: Netherlands
+Organization: GTT Communications Inc.
+Timezone: Europe/Amsterdam
+
+
+4.5 Traceroute
+I used the following command:
+tracert google.nl
+The traceroute reached Google in 6 hops.
+First hop:
+10.146.192.1
+This is my local/default gateway.
+Last hop:
+142.250.180.3
+The final destination belongs to Google.
+The traceroute shows that the traffic first passes through my local network gateway and then through several intermediate network routers before reaching Google's server.
+
+
+4.6 Google Data Center Location
+The final Google IP address found in the traceroute was:
+142.250.180.3
+I checked its location using:
+curl.exe ipinfo.io/142.250.180.3
+The IP geolocation result was:
+City: Lelystad
+Region: Flevoland
+Country: Netherlands
+Organization: Google LLC (AS15169)
+Therefore, based on the IP geolocation result, the Google server used for this connection appears to be located in Lelystad, Flevoland, Netherlands.
+

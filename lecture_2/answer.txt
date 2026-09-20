@@ -1,0 +1,26 @@
+Hex values for "world": 77 6F 72 6C 64
+
+Starting position of "hello world!" in hello_world.doc: 0x1850
+
+Image data position in hello_world(1bit).bmp: 0x3E (62 bytes)
+Image data position in hello_world(1bit).bmp: 0x3E
+Image data position in hello_world(24bit).bmp: 0x36
+
+When I ran hello_world.exe, Windows showed the message "This app can't run on your PC" because the file is not a real executable program.
+
+Changing the extension from .txt to .exe did not change the bytes inside the file. The file still contains the same text data: "hello world!".
+
+After setting hello_world.txt to read-only, I could edit the text in Notepad, but I could not save the changes to the original file. Notepad opened the Save As window instead.
+
+1. My computer has 1 physical disk.
+
+2. Disk model: Intel Optane H10 with SSD 512GB.
+Capacity: 512 GB.
+Sequential read speed: up to 2300 MB/s.
+Sequential write speed: up to 1300 MB/s.
+
+3. Disk 0 has 4 partitions:
+- 260 MB EFI System Partition: used for system boot files.
+- 475.49 GB OS (C:) partition: contains Windows, programs, and personal files.
+- 1000 MB Recovery Partition: used for Windows recovery.
+- 200 MB Recovery Partition: used for recovery/system tools.

@@ -1,0 +1,14 @@
+Number of active drivers currently running: 193
+
+Wi-Fi adapter: Intel(R) Wi-Fi 6 AX201 160MHz
+Wi-Fi driver name: Netwtw10.sys
+Driver file location: C:\Windows\System32\DRIVERS\Netwtw10.sys
+Driver provider: Intel
+Driver version: 23.160.0.4
+Driver date: 7/21/2025
+
+6.1 Monitor Active Processes
+Google Chrome was running with 12 processes. 
+At the time of the screenshot, it was using approximately 182.2 MB of RAM and 0.1% CPU.
+
+6.2 Browser location: C:\Program Files\Google\Chrome\Application\chrome.exe
